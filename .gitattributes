@@ -1,3 +1,9 @@
 # Define que o Git sempre converterá delimitadores de linha em CRLF
+
 *.txt eol=crlf
 *.md eol=crlf
+*.html eol=crlf
+*.js eol=crlf
+*.jsx eol=crlf
+*.css eol=crlf
+*.sh eol=lf
