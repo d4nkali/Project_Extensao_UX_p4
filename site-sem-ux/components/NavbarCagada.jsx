@@ -14,15 +14,15 @@ const CustomNavbar = () => {
 				<Container fluid>
 					<Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
 						<img
-							src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_UNIESP.png"
-							alt="Uniesp Logo"
+							src="Embraco.jpeg"
+							alt="embraer logo"
 							width={60}
 							height={60}
 							className="me-2 rounded"
 						/>
 					</Navbar.Brand>
 
-					{/* Botão "hamburguer" tosco */}
+					{/* Botão "hamburguer" guloso */}
 					<button
 						onClick={handleShow}
 						style={{
@@ -35,7 +35,7 @@ const CustomNavbar = () => {
 							borderRadius: '10px'
 						}}
 					>
-						🍕 MENU BIZARRO
+						MENU HYPE
 					</button>
 
 					<Navbar.Collapse className="justify-content-end d-md-flex">
