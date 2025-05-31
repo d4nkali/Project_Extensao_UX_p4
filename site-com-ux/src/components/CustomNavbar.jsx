@@ -17,7 +17,7 @@ const CustomNavbar = () => {
                         <img src="/logo.jpeg" alt="Embraco Logo" 
                         width={80} height={80} className="me-2 rounded" />
                         <span style={{ fontSize: "1.25rem" }}>
-                            EMBRACO REFRIGERAÇÃO INDUSTRIAL
+                            <b>EMBRACO REFRIGERAÇÃO INDUSTRIAL</b>
                         </span>
                     </Navbar.Brand>
     
@@ -28,6 +28,7 @@ const CustomNavbar = () => {
                             <Nav.Link as={Link} to="/a-empresa" className="px-3">
                                 {" "}Sobre a Empresa{" "}
                             </Nav.Link>
+														        <img src="/share-icon.png" alt="Compartilhar" width={40} height={40} />
                         </Nav>
                     </NavbarCollapse>
                 </Container>
@@ -44,6 +45,7 @@ const CustomNavbar = () => {
                 {/* Cada item de menu fecha o Offcanvas ao ser clicado */}
 
                 <Nav.Link as={Link} to="/a-empresa" onClick={handleClose}> Sobre a Empresa </Nav.Link>
+									<img src="/share-icon.png" alt="Compartilhar" width={40} height={40} />
             </Nav>
         </Offcanvas.Body>
         </Offcanvas>
