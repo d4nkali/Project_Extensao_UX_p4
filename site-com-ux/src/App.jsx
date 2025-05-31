@@ -2,6 +2,8 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import InicialComUx from './pages/InicialComUx';
+import Navbar from "./components/CustomNavbar";
+
 
 const App = () => {
 
@@ -11,6 +13,7 @@ const App = () => {
 
 			        	<BrowserRouter>
 								{/* Aqui ficara a navbar */}
+								<Navbar />
 
                 <Container className="my-4">
                     <Routes>
