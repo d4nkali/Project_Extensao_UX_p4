@@ -1,71 +1,55 @@
-import React, { useState } from 'react'
-import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Navbar, NavbarCollapse, Nav, Offcanvas } from "react-bootstrap";
 
-const CustomNavbar = () => {
-	const [show, setShow] = useState(false)
+const NavbarCagada = () => {
+    const [show, setShow] = useState(false);
 
-	const handleClose = () => setShow(false)
-	const handleShow = () => setShow(true)
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
-	return (
-		<>
-			<Navbar expand="md" style={{ backgroundColor: "#002F6C" }} variant="dark" className="px-3 shadow-sm">
-				<Container fluid>
-					<Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
-						<img
-							src="Embraco.jpeg"
-							alt="embraer logo"
-							width={60}
-							height={60}
-							className="me-2 rounded"
-						/>
-					</Navbar.Brand>
+    return (
+        <>
+            <Navbar expand="md" style={{ backgroundColor: "#002F6C" }} variant="dark" className="px-3 shadow-sm">
+                <Container fluid>
+                    <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+                        <img src="/logo.jpeg" alt="Embraco Logo" 
+                        width={80} height={80} className="me-2 rounded" />
+                        <span style={{ fontSize: "1.25rem" }}>
+                            EMBRACO REFRIGERAÇÃO INDUSTRIAL
+                        </span>
+                    </Navbar.Brand>
+    
+                    {/* Botão Hambúrguer apenas em telas pequenas  */}
+                    <Navbar.Toggle onClick={handleShow} />
+                    <NavbarCollapse className="justify-content-end d-none d-md-flex">
+                        <Nav>
+                            <Nav.Link as={Link} to="/a-empresa" className="px-3">
+                                {" "}Sobre a Empresa{" "}
+                            </Nav.Link>
+                        </Nav>
+                    </NavbarCollapse>
+                </Container>
+            </Navbar>
 
-					{/* Botão "hamburguer" guloso */}
-					<button
-						onClick={handleShow}
-						style={{
-							backgroundColor: 'lime',
-							border: '4px dashed red',
-							color: 'blue',
-							fontSize: '20px',
-							padding: '10px',
-							fontFamily: 'Comic Sans MS',
-							borderRadius: '10px'
-						}}
-					>
-						MENU HYPE
-					</button>
+        {/* Menu lateral (Offcanvas) visível em telas pequenas ao clicar no hamburguer*/}
 
-					<Navbar.Collapse className="justify-content-end d-md-flex">
-						<Nav>
-							<Nav.Link as={Link} to="/Sobre Nois" className="px-3">Sobre nois</Nav.Link>
-							<Nav.Link as={Link} to="/Caridade" className="px-3">Caridade</Nav.Link>
-						</Nav>
-					</Navbar.Collapse>
-				</Container>
-			</Navbar>
+        <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas.Header closeButton>
+            <Offcanvas.Title> Menu </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+            <Nav className="flex-column">
+                {/* Cada item de menu fecha o Offcanvas ao ser clicado */}
 
-			{/* Menu lateral ruim de propósito */}
-			<Offcanvas show={show} onHide={handleClose} style={{ backgroundColor: 'hotpink', color: 'black' }}>
-				<Offcanvas.Header closeButton style={{ backgroundColor: 'yellow', fontFamily: 'Comic Sans MS' }}>
-					<Offcanvas.Title>MENU</Offcanvas.Title>
-				</Offcanvas.Header>
+                <Nav.Link as={Link} to="/a-empresa" onClick={handleClose}> Sobre a Empresa </Nav.Link>
+            </Nav>
+        </Offcanvas.Body>
+        </Offcanvas>
 
-				<Offcanvas.Body style={{ fontFamily: 'Impact', fontSize: '20px' }}>
-					<Nav className="flex-column" style={{ gap: '20px' }}>
-						<Nav.Link as={Link} to="/sobre-nois" style={{ color: 'purple', backgroundColor: 'orange', padding: '10px', border: '3px dotted green' }}>
-							Sobre nois
-						</Nav.Link>
-						<Nav.Link as={Link} to="/caridade" style={{ color: 'red', backgroundColor: 'cyan', padding: '10px', transform: 'rotate(-5deg)' }}>
-							caridade
-						</Nav.Link>
-					</Nav>
-				</Offcanvas.Body>
-			</Offcanvas>
-		</>
-	)
-}
+        </>
+    );
+};
 
-export default CustomNavbar
+export default NavbarCagada;
