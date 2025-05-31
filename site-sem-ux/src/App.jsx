@@ -1,5 +1,5 @@
 import React from 'react';
-import InicialSemUx from './pages/InicialSemUx'
+import InicialSemUx from './pages/InicalSemUx'
 
 const App = () => {
 
