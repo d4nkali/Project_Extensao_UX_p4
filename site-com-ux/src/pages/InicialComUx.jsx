@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Card, Row, Col } from "react-bootstrap";
 import imagem1 from "../assets/tubulacoes.jpg"
+import BannerAd from '../components/BannerAd';
 
 const InicialComUx = () => {
 
@@ -10,6 +11,7 @@ const InicialComUx = () => {
 
 			<Container classname="py-4">
             {/* Aqui será o carousel do banner */}
+						<BannerAd />
 
             <Card className="mb-4 shadow-sm">
                 <Card.Body>
