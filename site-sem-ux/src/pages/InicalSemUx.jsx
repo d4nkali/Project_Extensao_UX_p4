@@ -1,54 +1,118 @@
-import React from 'react'
+import React from 'react';
+import { Container, Card, Row, Col } from "react-bootstrap";
+import BannerAdCagada from '../components/BannerAdCagada';
 
 const InicialSemUx = () => {
-  return (
-    <div style={{ backgroundColor: '#ff00ff', color: 'yellow', fontFamily: 'Comic Sans MS', padding: '10px' }}>
-      <marquee behavior="scroll" direction="left" style={{ fontSize: '30px', backgroundColor: 'black' }}>
-        BEM VINDO AO SITE DA EMBRACO!!! CLIQUE AQUI CLIQUE AQUI CLIQUE AQUI!!! 🚨🚨🚨
-      </marquee>
 
-      <h1 style={{ fontSize: '50px', color: 'lime', textAlign: 'center', textDecoration: 'underline' }}>
-        EMBRACO É TOP DEMAIS!!!
-      </h1>
+	return (
 
-      <p style={{ fontSize: '24px', lineHeight: '1.1', margin: '50px' }}>
-        A EMBRACO é muito legal tipo assim a gente tem umas coisas mt top clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui clique aqui...
-      </p>
+		<div>
 
-      <img
-        src="https://exemplo.com/imagem-inexistente.jpg"
-        alt="Imagem quebrada"
-        style={{ width: '100%', height: '400px', objectFit: 'none', border: '10px dashed red' }}
-      />
+			<Container classname="py-4">
+				{/* Aqui será o carousel do banner */}
+				<BannerAdCagada />
 
-      <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'nowrap', gap: '30px', marginTop: '30px' }}>
-        <div style={{ backgroundColor: 'orange', padding: '20px', width: '30%' }}>
-          <h2 style={{ fontSize: '35px', fontFamily: 'Impact', color: 'red' }}>BIBLIOTECA!!</h2>
-          <p>tem geladeira la e coisa tipo assim mt arcondicionado la mesmo mas nem sempre</p>
-        </div>
+				<Card className="mb-4 shadow-sm">
+					<Card.Body>
+						<p>
+							<b>A Embraco Refrigeração Industrial é referência no desenvolvimento de soluções inovadoras e sustentáveis para sistemas de refrigeração de alta performance.</b>
+						</p>
+						<p>
+							Atuamos há mais de 40 anos com foco em eficiência energética, confiabilidade e suporte técnico de excelência.
+						</p>
+						<p>
+							A seguir, conheça nossos diferenciais, áreas de atuação e as oportunidades que oferecemos para o setor industrial.
+						</p>
+					</Card.Body>
+				</Card>
 
-        <div style={{ backgroundColor: 'cyan', padding: '20px', width: '30%' }}>
-          <h2 style={{ fontSize: '35px', fontFamily: 'Cursive', color: 'purple' }}>PREDIO PRINCIPAL KKK</h2>
-          <p>um predio mt doido gigante bonito mt top mesmo véi kkkk</p>
-        </div>
+				<Row className="g-4">
+					<Col md={4}>
+						{/* Card 1 */}
+						<Card className="text-center h-100 shadow=sm">
+							<Card.Img
+								variant="top"
+								src="/instalamanu.png"
+								alt="solucoes"
+								style={{ height: "200px", objectFit: "cover" }}
+							/>
+							<Card.Body>
+								<Card.Title>Soluções Personalizadas</Card.Title>
+								<Card.Text>
+									Desenvolvemos projetos sob medida para atender demandas específicas de refrigeração industrial com alta performance e eficiência energética.
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
 
-        <div style={{ backgroundColor: 'lime', padding: '20px', width: '30%' }}>
-          <h2 style={{ fontSize: '35px', fontFamily: 'Arial Black', color: 'blue' }}>CAMPUS VIDA</h2>
-          <p>vida loka dos funcionarios la, tudo feito um bagaço de cana com pagamento atrasado, la tem tudo q tu imagina tipo cachorro gato cadeira geladeira</p>
-        </div>
-      </div>
+					<Col md={4}>
+						{/* Card 2 */}
+						<Card className="text-center h-100 shadow=sm">
+							<Card.Img
+								variant="top"
+								src="/laboratorio.jpg"
+								alt="lab"
+								style={{ height: "200px", objectFit: "cover" }}
+							/>
+							<Card.Body>
+								<Card.Title>Laboratório de Testes Avançado</Card.Title>
+								<Card.Text>
+									Espaço equipado com tecnologia de ponta para simulações térmicas e testes de resistência, garantindo segurança e desempenho dos produtos.
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
 
-      <div style={{ marginTop: '40px', textAlign: 'center' }}>
-        <button style={{ backgroundColor: 'red', color: 'white', padding: '20px', fontSize: '25px', border: '5px dashed black' }}>
-          CLIQUE AQUI AGORA!!!
-        </button>
+					<Col md={4}>
+						{/* Card 3 */}
+						<Card className="text-center h-100 shadow=sm">
+							<Card.Img
+								variant="top"
+								src="/soluções personalizadas.jpg"
+								alt="tubu"
+								style={{ height: "200px", objectFit: "cover" }}
+							/>
+							<Card.Body>
+								<Card.Title>Instalação e Manutenção</Card.Title>
+								<Card.Text>
+									Nossa equipe técnica especializada garante uma instalação segura e suporte contínuo com atendimento rápido e eficaz.
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
+				</Row>
 
-        <p style={{ marginTop: '20px', fontSize: '14px' }}>
-          ou entao <a href="#" style={{ color: 'blue', textDecoration: 'underline' }}>clique aki tbm</a> sei la
-        </p>
-      </div>
-    </div>
-  )
-}
+				{/* Segunda Linha */}
 
-export default InicialSemUx
+				<Row className="g-4 mt-4">
+					{/* Card 1 */}
+					<Col md={6}>
+						<Card className="h-100 shadow-sm">
+							<Card.Body className="text-center">
+								<Card.Title>Parcerias com Indústrias</Card.Title>
+								<Card.Text>
+									Colaboramos com grandes players dos setores alimentício, farmacêutico e automotivo para otimizar processos e melhorar resultados.	                            </Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
+					{/* Card 2 */}
+					<Col md={6}>
+						<Card className="h-100 shadow-sm">
+							<Card.Body className="text-center">
+								<Card.Title>Inovação e Pesquisa</Card.Title>
+								<Card.Text>
+									Investimos constantemente em pesquisa e desenvolvimento para entregar soluções com as mais recentes inovações do setor.                            </Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
+				</Row>
+
+			</Container>
+
+		</div>
+
+	);
+
+};
+
+export default InicialSemUx;
