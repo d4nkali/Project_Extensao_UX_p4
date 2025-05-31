@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Card, Row, Col } from "react-bootstrap";
-import BannerAdCagada from '../components/BannerAdCagada';
+import BannerAdCagada from '../components/BannerAdCagado';
 
 const InicialSemUx = () => {
 
