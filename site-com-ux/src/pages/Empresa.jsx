@@ -1,11 +1,12 @@
 import React from 'react'
-import { Card, Container, Row } from 'react-bootstrap'
+import { Card, Container, Row, Col } from 'react-bootstrap'
 
 const Empresa = () => {
   return (
     <div>
         <Container className="py-1">
-            <h2 className='mb-1'>A EMPRESA</h2>
+            <h2 style={{ textAlign:"center", fontFamily: "monospace" }} className='mb-1'>SOBRE A EMPRESA</h2>
+						<br />
 
             <Card className="mb-1 shadow-sm">
                 <Card.Body>
@@ -46,7 +47,7 @@ const Empresa = () => {
                                     </Card.Body>
                                 </Card>
                             </Col>
-            
+
                             <Col md={4}>
                             {/* Card 2 */}
                                 <Card className="text-center h-100 shadow=sm">
