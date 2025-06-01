@@ -1,6 +1,0 @@
-
-/* Deixa todos os textos brancos e em negrito no modo escuro */
-body.modo-escuro * {
-  color: white !important;
-  font-weight: bold !important;
-}

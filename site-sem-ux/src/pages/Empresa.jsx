@@ -5,31 +5,31 @@ const Empresa = () => {
   return (
     <div>
         <Container className="py-1">
-            <h2 style={{ textAlign:"center", fontFamily: "monospace" }} className='mb-1'>SOBRE A EMPRESA</h2>
+            <b><h2 style={{color:"blue", textAlign:"", fontFamily: "liric" }} className='mb-5'>SOBRE A EMPRESA</h2></b>
 						<br />
 
-            <Card className="mb-1 shadow-sm">
-                <Card.Body>
+            <Card className="mb-3 shadow">
+                <Card.Body style={{textAlign:"center"}}>
                     <p>
                         A EMBRACO Refrigeração Industrial é uma empresa comprometida com o fornecimento de dispositivos de refrigeração e sistemas de alta qualidade e desempenho. Fundada há mais de 40 anos no estado da Paraíba, a empresa iniciou sua trajetória com a venda de freezers.
                         Vinte anos depois, expandiu sua produção e estoque, passando a oferecer serviços de armazenamento refrigerado e a fabricar seus próprios dispositivos de refrigeração sob demanda.
                         Atualmente, a EMBRACO é um dos principais nomes do setor de refrigeração, com mais de 45 filiais espalhadas pelo país e 10 filiais em outros países da América Latina.
                     </p>
+                </Card.Body>
                     <p>
                         A EMBRACO possui diversas equipes distribuídas por toda a América, contando com mais de 50 mil funcionários espalhados entre suas filiais. 
                         Todos atuam com o objetivo de garantir o máximo de qualidade e excelência para nossos clientes.
                     </p>
+            </Card>
                     <p>
                         A seguir, conheça mais sobre nossos serviços e dispositivos. 
                         Caso tenha dúvidas, entre em contato com a nossa equipe de suporte para garantir a melhor experiência possível.
                     </p>
-                </Card.Body>
-            </Card>
 
-            <Row className="g-1">
-                          <Col md={4}>
+            <Row className="g-5">
+                          <Col md={6}>
                             {/* Card 1 */}
-                                <Card className="text-center h-100 shadow=sm">
+                                <Card className=" h-100 shadow=sm">
                                     <Card.Img   
                                         variant="top"
                                         src= "Imagem-de-Dispositivos.jpg"
@@ -48,14 +48,14 @@ const Empresa = () => {
                                 </Card>
                             </Col>
 
-                            <Col md={4}>
+                            <Col md={5}>
                             {/* Card 2 */}
                                 <Card className="text-center h-100 shadow=sm">
-                                    <Card.Img   
+                                    <Card.Img  
                                         variant="top"
                                         src= "Imagem-de-predio.jpg"
                                         alt="Sede"
-                                        style={{height: '200px', objectFit: 'cover'}}
+                                        style={{height: '500px', objectFit: 'cover'}}
                                     />
                                     <Card.Body>
                                         <Card.Title> 
@@ -69,7 +69,7 @@ const Empresa = () => {
                                 </Card>
                             </Col>
             
-                            <Col md={4}>
+                            <Col md={5}>
                             {/* Card 3 */}
                                 <Card className="text-center h-100 shadow=sm">
                                     <Card.Img   
@@ -92,7 +92,7 @@ const Empresa = () => {
             </Row>
         </Container>
     </div>
-  )
+    )
 }
 
 export default Empresa
