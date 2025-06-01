@@ -4,6 +4,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import InicialComUx from './pages/InicialComUx';
 import Navbar from "./components/CustomNavbar";
 import Empresa from './pages/Empresa';
+import './App.css';
 
 
 const App = () => {
