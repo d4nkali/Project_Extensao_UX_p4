@@ -27,14 +27,13 @@ const InicialSemUx = () => {
 				</Card>
 
 				<Row className="g-4">
-					<Col md={4}>
-						{/* Card 1 */}
-						<Card className="text-center h-100 shadow=sm">
+					<Col md={4} style={{ marginTop: "0px" }}>
+						<Card className="text-center h-100" style={{ transform: "rotate(-2deg)", backgroundColor: "#e0f7fa", paddingBottom: "20px" }}>
 							<Card.Img
 								variant="top"
 								src="/instalamanu.png"
 								alt="solucoes"
-								style={{ height: "200px", objectFit: "cover" }}
+								style={{ height: "210px", objectFit: "cover" }}
 							/>
 							<Card.Body>
 								<Card.Title>Soluções Personalizadas</Card.Title>
@@ -45,14 +44,13 @@ const InicialSemUx = () => {
 						</Card>
 					</Col>
 
-					<Col md={4}>
-						{/* Card 2 */}
-						<Card className="text-center h-100 shadow=sm">
+					<Col md={4} style={{ marginTop: "30px" }}>
+						<Card className="text-start h-100" style={{ transform: "rotate(4deg)", backgroundColor: "#fff3e0", border: "2px dashed orange" }}>
 							<Card.Img
 								variant="top"
 								src="/laboratorio.jpg"
 								alt="lab"
-								style={{ height: "200px", objectFit: "cover" }}
+								style={{ height: "180px", objectFit: "cover" }}
 							/>
 							<Card.Body>
 								<Card.Title>Laboratório de Testes Avançado</Card.Title>
@@ -63,45 +61,19 @@ const InicialSemUx = () => {
 						</Card>
 					</Col>
 
-					<Col md={4}>
-						{/* Card 3 */}
-						<Card className="text-center h-100 shadow=sm">
+					<Col md={4} style={{ marginTop: "60px" }}>
+						<Card className="text-end h-100" style={{ transform: "rotate(-3deg)", backgroundColor: "#f1f8e9", padding: "15px" }}>
 							<Card.Img
 								variant="top"
 								src="/soluções personalizadas.jpg"
 								alt="tubu"
-								style={{ height: "200px", objectFit: "cover" }}
+								style={{ height: "230px", objectFit: "cover" }}
 							/>
 							<Card.Body>
 								<Card.Title>Instalação e Manutenção</Card.Title>
 								<Card.Text>
 									Nossa equipe técnica especializada garante uma instalação segura e suporte contínuo com atendimento rápido e eficaz.
 								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-				</Row>
-
-				{/* Segunda Linha */}
-
-				<Row className="g-4 mt-4">
-					{/* Card 1 */}
-					<Col md={6}>
-						<Card className="h-100 shadow-sm">
-							<Card.Body className="text-center">
-								<Card.Title>Parcerias com Indústrias</Card.Title>
-								<Card.Text>
-									Colaboramos com grandes players dos setores alimentício, farmacêutico e automotivo para otimizar processos e melhorar resultados.	                            </Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					{/* Card 2 */}
-					<Col md={6}>
-						<Card className="h-100 shadow-sm">
-							<Card.Body className="text-center">
-								<Card.Title>Inovação e Pesquisa</Card.Title>
-								<Card.Text>
-									Investimos constantemente em pesquisa e desenvolvimento para entregar soluções com as mais recentes inovações do setor.                            </Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>

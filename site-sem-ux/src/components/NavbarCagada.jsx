@@ -31,6 +31,7 @@ const NavbarCagada = () => {
             <Nav.Link as={Link} to="/a-empresa" className="px-3 text-white">
               Sobre a Empresa
             </Nav.Link>
+						<img src="/ArvoreCompartilhar.jpeg" alt="Compartilhar" width={40} height={40} />
           </Nav>
 
           <Button
