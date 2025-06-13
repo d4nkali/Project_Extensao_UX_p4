@@ -13,15 +13,15 @@ Muitas vezes, a experiência do usuário é negligenciada durante o desenvolvime
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
-- HTML5, CSS3, JavaScript (ES6+)
+- HTML5, CSS3, JavaScript
 
 ## 📂 Estrutura do Projeto
 
 ```plaintext
 Project_Extensao_UX_p4/
-├── site-com-ux/            # Versão com boas práticas de UX
-├── site-sem-ux/            # Versão sem boas práticas de UX
-├── README.md               # Este arquivo
+├── site-com-ux/            
+├── site-sem-ux/            
+├── README.md               
 └── ...
 ```
 
@@ -66,7 +66,7 @@ npm run dev
 
 Desenvolvido por:
 
-- [@d4nkali](https://github.com/d4nkali)
+- [d4nkali](https://github.com/d4nkali)
 - [JANzxz](https://github.com/JANzxz)
 - [ViniciusSilas01](https://github.com/ViniciusSilas01)
 - [JoaoMagalhaes-hub](https://github.com/JoaoMagalhaes-hub)
